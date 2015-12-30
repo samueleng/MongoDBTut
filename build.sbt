@@ -1,12 +1,12 @@
-name := "MongoTest1"
+name := "MongoDBDemo1"  
 
 version := "1.0"
-
-scalaVersion := "2.9.1"
-
-resolvers += "Sonatype Repo" at "https://oss.sonatype.org/content/groups/scala-tools/"
-
-libraryDependencies += "com.mongodb.casbah" % "casbah-core_2.9.1" % "2.1.5-1"
-
-//mainClass in (Compile, run) := Some("Get")
-
+     
+scalaVersion := "2.10.0"
+     
+libraryDependencies ++= Seq(
+      "org.mongodb" %% "casbah" % "2.6.0",
+      "org.slf4j" % "slf4j-simple" % "1.6.4"
+)
+ 
+scalacOptions += "-deprecation"

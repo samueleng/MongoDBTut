@@ -1,4 +1,6 @@
-import com.mongodb.casbah.Imports._
+import com.mongodb.casbah.Imports._   
+
+case class Stock (symbol: String, price: Double)
 
 object Common {
 
